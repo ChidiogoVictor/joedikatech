@@ -27,7 +27,7 @@ const Pricing = () => {
           </div>
         </div>
         <div className="relative">
-          <h3>Pay once, use forever</h3>
+          <p className="text-center py-4 h2">Pay once, use forever</p>
         </div>
         <div className="relative">
           <PricingList />
