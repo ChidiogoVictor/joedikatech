@@ -18,9 +18,9 @@ const Hero = () => {
         mx-auto text-center mb-[4rem] md:mb-20 lg:mb: [6rem]"
         >
           <h1 className="h1 mb-6 mt-6">
-            Explore the Possibilities of AI Chatting with {``}
+            Explore the Possibilities of Visionary Web Solutions with {``}
             <span className="inline-block relative">
-              Brainwaive{" "}
+              JoeDikaTech{" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -31,11 +31,13 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            unleash the power of AI with Brainwave, Upgrade your productivity
-            with Braiwave, the Open AI chat app.
+            We turn ideas into reality through cutting-edge web development.
+            Whether you are a startup looking for a strong online presence, a
+            growing business in need of digital transformation, or an enterprise
+            requiring custom web applications, we've got you covered.
           </p>
-          <Button href="/pricing" blue>
-            Get Started
+          <Button href="/pricing#pricing" blue>
+            Contact Us
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">

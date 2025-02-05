@@ -14,8 +14,8 @@ const Benefits = () => {
     <Section id="features">
       <div className="container relative z-2">
         <Heading
-          classNamme="md:max-w-md lg:max-w-2xl"
-          title="Chat Smater, Not Harder with Brainwave"
+          className=" flex justify-center items-center md:max-w-md lg:max-w-2xl"
+          title="Our Services"
         />
 
         <div className="flex flex-wrap gap-10 mb-10 justify-center">
@@ -34,7 +34,7 @@ const Benefits = () => {
                 <div className="flex items-center mt-auto">
                   <img src={item.iconUrl} width={48} alt={item.title} />
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    Explore more
+                    Contact Us
                   </p>
                   <Arrow />
                 </div>
