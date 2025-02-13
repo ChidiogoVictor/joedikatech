@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import Pricing from "./components/Pricing";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Benefits />
         <Pricing />
         <About />
+        <Contact />
         <Footer />
       </div>
 
