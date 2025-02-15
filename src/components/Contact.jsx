@@ -1,11 +1,28 @@
 import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Section from "./Section";
 import Button from "./Button";
 
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = () => {};
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_s2jq0p8", "template_s8mez1l", form.current, {
+        publicKey: "cNsEd8mdBLwRQSw8X",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <Section className="container" id="contact">
       <div className="relative">

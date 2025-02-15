@@ -11,7 +11,7 @@ const Pricing = () => {
         <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
             src={smallSphere}
-            classNmae="relative z-1"
+            className="relative z-1"
             width={255}
             height={255}
             alt="sphere"
