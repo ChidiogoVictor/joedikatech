@@ -58,6 +58,7 @@ export const navigation = [
     url: "#contact",
   },
   {
+    /*} {
     id: "4",
     title: "New account",
     url: "#signup",
@@ -68,6 +69,7 @@ export const navigation = [
     title: "Sign in",
     url: "#login",
     onlyMobile: true,
+  }, */
   },
 ];
 
