@@ -2,6 +2,8 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Section from "./Section";
 import Button from "./Button";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
@@ -9,20 +11,23 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // emailjs API for sending direct email
     emailjs
       .sendForm("service_s2jq0p8", "template_s8mez1l", form.current, {
         publicKey: "cNsEd8mdBLwRQSw8X",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Email Sent Successfully!"); // Show toast on success
+          e.target.reset(); // Reset the form only after success
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error("Failed to send email. Please try again."); // Show toast on failure
+          console.error("FAILED...", error.text);
         }
       );
-    e.target.reset();
   };
+
   return (
     <Section className="container" id="contact">
       <div className="relative">
@@ -51,6 +56,8 @@ const Contact = () => {
           <Button type="submit">{"Send Message"}</Button>
         </form>
       </div>
+      {/* ToastContainer for showing notifications */}
+      <ToastContainer position="top-right" autoClose={3000} />
     </Section>
   );
 };
