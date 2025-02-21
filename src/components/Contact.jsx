@@ -13,7 +13,7 @@ const Contact = () => {
 
     // emailjs API for sending direct email
     emailjs
-      .sendForm("service_s2jq0p8", "template_s8mez1l", form.current, {
+      .sendForm("service_zhvbz63", "template_s8mez1l", form.current, {
         publicKey: "cNsEd8mdBLwRQSw8X",
       })
       .then(
