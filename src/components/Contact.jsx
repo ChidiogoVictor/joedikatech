@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <Section className="container mx-auto px-4" id="contact">
-      <div className="max-w-lg mx-auto bg-n-5 p-6 rounded-lg shadow-md">
+      <div className="max-w-lg mx-auto bg-n-7 p-6 rounded-lg shadow-md">
         <h2 className="h2 text-center mb-4 text-2xl font-semibold">
           Contact Us
         </h2>
