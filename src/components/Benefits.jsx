@@ -32,10 +32,18 @@ const Benefits = () => {
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
                   <img src={item.iconUrl} width={48} alt={item.title} />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  {/* "Contact Us" as a Link */}
+                  <a
+                    href="#contact"
+                    className="ml-auto font-code text-xs font-bold text-blue-500 uppercase tracking-wider hover:underline"
+                  >
                     Contact Us
-                  </p>
-                  <Arrow />
+                  </a>
+
+                  {/* Arrow as a Link */}
+                  <a href="#contact" className="ml-2">
+                    <Arrow blue />
+                  </a>
                 </div>
               </div>
               {item.light && <GradientLight />}

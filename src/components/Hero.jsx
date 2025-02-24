@@ -36,7 +36,7 @@ const Hero = () => {
             growing business in need of digital transformation, or an enterprise
             requiring custom web applications, we've got you covered.
           </p>
-          <Button href="/pricing#pricing" blue>
+          <Button href={"#contact"} blue>
             Contact Us
           </Button>
         </div>
