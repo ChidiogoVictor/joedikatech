@@ -21,8 +21,7 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10 justify-center">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[22rem]"
-              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[22rem] rounded-2xl bg-conic-gradient"
               key={item.id}
             >
               <div
@@ -44,7 +43,7 @@ const Benefits = () => {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-0 opacity-10">
+                <div className="absolute inset-0 opacity-10 ">
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
