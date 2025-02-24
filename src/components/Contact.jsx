@@ -29,31 +29,48 @@ const Contact = () => {
   };
 
   return (
-    <Section className="container" id="contact">
-      <div className="relative">
-        <h2 className="h2 text-center mb-4">Contact Us</h2>
+    <Section className="container mx-auto px-4" id="contact">
+      <div className="max-w-lg mx-auto bg-n-5 p-6 rounded-lg shadow-md">
+        <h2 className="h2 text-center mb-4 text-2xl font-semibold">
+          Contact Us
+        </h2>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="--form-control --card flex flex-col items-center justify-center"
+          className="flex flex-col space-y-4"
         >
           <input
             type="text"
             placeholder="Full Name"
             name="user_name"
             required
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
           />
-          <input type="email" placeholder="Email" name="user_email" required />
-          <input type="text" placeholder="Subject" name="subject" required />
+          <input
+            type="email"
+            placeholder="Email"
+            name="user_email"
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+          />
           <textarea
             name="message"
             placeholder="Message"
-            cols="22"
-            rows="10"
+            cols="30"
+            rows="5"
             required
-            className="p-2"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
           />
-          <Button type="submit">{"Send Message"}</Button>
+          <Button type="submit" className="w-full sm:w-auto">
+            Send Message
+          </Button>
         </form>
       </div>
       {/* ToastContainer for showing notifications */}
