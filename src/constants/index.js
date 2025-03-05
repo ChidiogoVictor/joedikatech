@@ -267,8 +267,8 @@ export const benefits = [
   },
   {
     id: "3",
-    title: "Mobile-Responsive Design",
-    text: "Websites that work flawlessly across all devices.",
+    title: "Intranet Development",
+    text: "Private, secure network, allowing employees to collaborate, share information, and access internal resources efficiently.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
