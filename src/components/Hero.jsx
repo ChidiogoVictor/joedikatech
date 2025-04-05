@@ -1,7 +1,7 @@
 import Section from "./Section";
 import { curve, heroBackground } from "../assets";
 import Button from "./Button";
-import team from "../assets/team.png";
+import team from "../assets/joedikatechHero2.jpg";
 import CompanyLogos from "./design/CompanyLogos";
 const Hero = () => {
   return (
