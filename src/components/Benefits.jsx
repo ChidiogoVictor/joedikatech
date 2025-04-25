@@ -14,7 +14,7 @@ const Benefits = () => {
     <Section id="features">
       <div className="container relative z-2">
         <Heading
-          className=" flex justify-center items-center md:max-w-md lg:max-w-2xl"
+          className="flex justify-center items-center md:max-w-md lg:max-w-2xl"
           title="Our Services"
         />
 
@@ -24,34 +24,33 @@ const Benefits = () => {
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[22rem] rounded-2xl bg-conic-gradient"
               key={item.id}
             >
-              <div
-                className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]
-              pointer-event-none"
-              >
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-event-none bg-light-1 dark:bg-n-8 rounded-2xl">
+                <h5 className="h5 mb-5 text-stroke-1 dark:text-n-1">
+                  {item.title}
+                </h5>
+                <p className="body-2 mb-6 text-stroke-1/70 dark:text-n-3">
+                  {item.text}
+                </p>
                 <div className="flex items-center mt-auto">
                   <img src={item.iconUrl} width={48} alt={item.title} />
-                  {/* "Contact Us" as a Link */}
                   <a
                     href="#contact"
                     className="ml-auto font-code text-xs font-bold text-blue-500 uppercase tracking-wider hover:underline"
                   >
                     Contact Us
                   </a>
-
-                  {/* Arrow as a Link */}
                   <a href="#contact" className="ml-2">
                     <Arrow blue />
                   </a>
                 </div>
               </div>
-              {item.light && <GradientLight />}
+
+              {/* Background image visible only in dark mode */}
               <div
-                className="absolute inset-0.5 bg-n-8"
+                className="absolute inset-0.5 hidden dark:block bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-0 opacity-10 ">
+                <div className="absolute inset-0 opacity-10">
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
@@ -63,6 +62,7 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
+
               <ClipPath />
             </div>
           ))}
