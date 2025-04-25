@@ -10,7 +10,6 @@
   --font-sora: "Sora", sans-serif;
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
-  color-scheme: dark;
 }
 
 * {
@@ -60,12 +59,18 @@
   margin-right: 1rem;
 }
 
+/* Tailwind base styling */
 @layer base {
   body {
-    @apply font-sans bg-n-8 text-n-1 text-base;
+    @apply font-sans bg-light-1 text-stroke-1 text-base transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-n-8 text-n-1;
   }
 }
 
+/* Custom rotation utilities */
 .rotate-45 {
   @apply rotate-[45deg];
 }

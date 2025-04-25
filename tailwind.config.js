@@ -3,6 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
+  darkMode: "class", // ✨ Important: Enable class-based dark mode switching
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -23,19 +24,27 @@ export default {
           1: "#26242C",
         },
         n: {
-          1: "#FFFFFF",
+          1: "#FFFFFF", // Light mode background (white)
           2: "#CAC6DD",
           3: "#ADA8C3",
           4: "#757185",
           5: "#3F3A52",
           6: "#252134",
           7: "#15131D",
-          8: "#0E0C15",
+          8: "#0E0C15", // Dark mode background
           9: "#474060",
           10: "#43435C",
           11: "#1B1B2E",
           12: "#2E2A41",
           13: "#6C7275",
+        },
+        light: {
+          1: "#FFFFFF", // extra white background
+          2: "#F7F7F7", // slightly off-white
+          3: "#E5E5E5", // light gray borders
+          4: "#D4D4D4", // light gray text
+          5: "#BBBBBB", // mid-light gray
+          6: "#999999", // darker gray
         },
       },
       fontFamily: {
