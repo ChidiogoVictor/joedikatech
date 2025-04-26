@@ -8,7 +8,7 @@ const About = () => {
       <div className="relative">
         <h2 className="h2 text-center mb-4">About Us</h2>
         <div className="flex flex-col items-center justify-center px-4">
-          <p className="w-full max-w-[50rem] p-6 bg-n-8 border border-n-6 rounded-[2rem] flex flex-col items-center justify-center text-justify">
+          <p className="w-full max-w-[50rem] p-6 bg-n-1 dark:bg-n-8 border-2 border-n-6 rounded-[2rem] flex flex-col items-center justify-center text-justify">
             We are a team of passionate developers, designers, and strategists
             committed to delivering high-performance, scalable, and secure web
             solutions. Our expertise spans across various technologies, ensuring

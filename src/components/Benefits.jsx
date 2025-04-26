@@ -5,8 +5,6 @@ import { benefits } from "../constants";
 
 import Arrow from "../assets/svg/Arrow";
 
-import { GradientLight } from "./design/Benefits";
-
 import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
@@ -18,7 +16,7 @@ const Benefits = () => {
           title="Our Services"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10 justify-center">
+        <div className="flex flex-wrap gap-10  justify-center">
           {benefits.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[22rem] rounded-2xl bg-conic-gradient"
