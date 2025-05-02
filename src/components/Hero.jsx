@@ -40,14 +40,14 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-stroke-1/70 dark:text-n-2 lg:mb-8">
+          <p className="body-1 max-w-3xl mx-auto mb-7 text-stroke-1/70 dark:text-n-2 lg:mb-8">
             We turn ideas into reality through cutting-edge web development.
             Whether you are a startup looking for a strong online presence, a
             growing business in need of digital transformation, or an enterprise
             requiring custom web applications, we've got you covered.
           </p>
           <Button href={"#contact"} blue>
-            Contact Us
+            Free Consultation
           </Button>
         </div>
 
